@@ -1,2 +1,2 @@
 # PortfolioWebsite
-12-11-2025
+Dit is mijn portfolio website voor de opleiding Software Development, ik heb hier een week de tijd voor gehad en ben toen hier mee gekomen. Dit is een van mijn eerste websites die ik zelfstandig gemaakt hebt en moest dus veel HTML / CSS leren. Ik vondt het wel heel leuk om dit te maken en heb hier ook veel van geleerd en veel ervaring hiervan gekregen. voor sommige aspecten van het project heb ik de hulp van AI en klasgenoten gekregen en hierdoor begreep ik ook een stuk meer van de code.
