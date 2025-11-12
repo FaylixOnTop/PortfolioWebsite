@@ -23,9 +23,48 @@
             <div class="section">
                 <div class="box-area">
                     <h2 style="color: #2c2f72; font-size: 30px;">Contact</h2>
+
+                    <div class="form-box">
+                        <div class="contact-form" aria-label="Contactformulier">
+                        <p class="contact-note">Stuur me een bericht, Ik reageer meestal binnen een paar dagen.</p>
+                        <form id="contactForm" onsubmit="sendEmail(event)">
+                            <label for="name">Naam</label>
+                            <input id="name" name="name" type="text" placeholder="Jouw naam" required>
+
+                            <label for="email">E-mail (afzender)</label>
+                            <input id="email" name="email" type="email" placeholder="naam@voorbeeld.com" required>
+
+                            <label for="message">Bericht</label>
+                            <textarea id="message" name="message" placeholder="Typ je bericht hier..." required></textarea>
+
+                            <button type="submit">Verzenden</button>
+                        </form>
+
+                        </div>
+                    </div>
+
+                    <script>
+                        function encodeForMail(params){
+                            return Object.keys(params).map(function(k){
+                                return encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+                            }).join('&');
+                        }
+
+                        function sendEmail(e){
+                            e.preventDefault();
+                            var name = document.getElementById('name').value.trim();
+                            var email = document.getElementById('email').value.trim();
+                            var message = document.getElementById('message').value.trim();
+
+                            var to = '2191822@roc-dev.com';
+                            var subject = 'Contactformulier van ' + name;
+                            var body = 'Naam: ' + name + '\nE-mail: ' + email + '\n\n' + message;
+
+                            window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                        }
+                    </script>
                 </div>
             </div>
         </div>
-
     </body>
 </html>
