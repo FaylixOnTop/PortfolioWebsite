@@ -221,7 +221,6 @@ input[type="radio"] {
 #slide1:checked ~ #slides .inner { margin-left: 0; }
 #slide2:checked ~ #slides .inner { margin-left: -100%; }
 #slide3:checked ~ #slides .inner { margin-left: -200%; }
-#slide4:checked ~ #slides .inner { margin-left: -300%; }
 
 #bullets {
     display: flex;
@@ -245,8 +244,7 @@ input[type="radio"] {
 
 #slide1:checked ~ #bullets label[for="slide1"],
 #slide2:checked ~ #bullets label[for="slide2"],
-#slide3:checked ~ #bullets label[for="slide3"],
-#slide4:checked ~ #bullets label[for="slide4"] {
+#slide3:checked ~ #bullets label[for="slide3"] {
     background: #ff9500;
 }
 
