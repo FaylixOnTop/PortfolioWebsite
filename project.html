@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,63 +24,74 @@
                 <div class="box-area">
                     <h2 style="color: #2c2f72; font-size: 30px;">My Projects</h2>
 
-                    <div class="projects-grid">
+                    <div id="slider" style="width: 100%; max-width: 900px; margin: 30px auto; position: relative;">
+                        <input type="radio" name="slider" id="slide1" checked>
+                        <input type="radio" name="slider" id="slide2">
+                        <input type="radio" name="slider" id="slide3">
+                        <input type="radio" name="slider" id="slide4">
 
-                        <div class="project-card">
-                            <div class="project-image" style="background-color: #ff9500;"></div>
-                            <div class="project-info">
-                                <h3>MMD Tower Defense</h3>
-                                <p>Een tower defense based game waarbij je torens neer zet om de base te beschermen</p>
-                                <div class="project-tags">
-                                    <span class="tag">Unity</span>
-                                    <span class="tag">C#</span>
-                                    <span class="tag">BLENDER</span>
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="inner">
+                                    <div class="slide slide_1" style="background-image: url('project1.png');">
+                                        <div class="slide-content">
+                                            <h3>MMD Tower Defense</h3>
+                                            <p>Een tower defense based game waarbij je torens neer zet om de base te beschermen</p>
+                                            <div style="margin-top:12px;">
+                                                <span class="tag">Unity</span>
+                                                <span class="tag">C#</span>
+                                                <span class="tag">BLENDER</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide slide_2" style="background-image: url('project2.png');">
+                                        <div class="slide-content">
+                                            <h3>T-Rex Dino Game</h3>
+                                            <p>Deze game loop je in het 2d van links naar rechts, er komen obstakels die jij moet ontwijken door te springen of bukken.</p>
+                                            <div style="margin-top:12px;">
+                                                <span class="tag">Processing</span>
+                                                <span class="tag">Java</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide slide_3" style="background-image: url('project3.png');">
+                                        <div class="slide-content">
+                                            <h3>Java</h3>
+                                            <p>Hier heb ik veel geleerd over Java en heb hier veel opdrachten mee gemaakt, Ook moest ik hier een einopdracht mee maken waarbij ik toen de T-rex game van google heb gemaakt</p>
+                                            <div style="margin-top:12px;">
+                                                <span class="tag">C#</span>
+                                                <span class="tag">Unity</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="slide slide_4" style="background-image: url('project4.jpg');">
+                                        <div class="slide-content">
+                                            <h3>Project Name 4</h3>
+                                            <p>Beschrijving van je vierde project. Wat heb je hiervan geleerd?</p>
+                                            <div style="margin-top:12px;">
+                                                <span class="tag">Design</span>
+                                                <span class="tag">UI/UX</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a href="#" class="project-link">View Project →</a>
                             </div>
                         </div>
 
-                        <div class="project-card">
-                            <div class="project-image" style="background-color: #ff9500;"></div>
-                            <div class="project-info">
-                                <h3>T-Rex Dino game</h3>
-                                <p>Deze game loop je in het 2d van links naar rechts, er komen obstakels die jij moet ontwijken door te springen of bukken.</p>
-                                <div class="project-tags">
-                                    <span class="tag">Processing</span>
-                                    <span class="tag">Java</span>
-                                </div>
-                                <a href="#" class="project-link">View Project →</a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image" style="background-color: #ff9500;"></div>
-                            <div class="project-info">
-                                <h3>Cloud Adventures</h3>
-                                <p>Een 2d RPG game waarbij je rond loopt over eilanden met jumps en enemies, het doel is om zo ver mogelijk te komen</p>
-                                <div class="project-tags">
-                                    <span class="tag">C#</span>
-                                    <span class="tag">Unity</span>
-                                </div>
-                                <a href="#" class="project-link">View Project →</a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-image" style="background-color: #ff9500;"></div>
-                            <div class="project-info">
-                                <h3>Project Name 4</h3>
-                                <p>Beschrijving van je vierde project. Wat heb je hiervan geleerd?</p>
-                                <div class="project-tags">
-                                    <span class="tag">Design</span>
-                                    <span class="tag">UI/UX</span>
-                                </div>
-                                <a href="#" class="project-link">View Project →</a>
-                            </div>
+                        <div id="bullets" style="text-align: center; margin: 20px 0 40px;">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        
     </body>
 </html>
